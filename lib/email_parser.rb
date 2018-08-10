@@ -11,7 +11,7 @@ class EmailParser
     end
 
     def parse
-      emails.delete(",").split.uniq
-    end
+      emails.delete(",").split.uniq#removes commas from string, splits to an array and returns unique addresses
+    end                             #does .split automatically palce commas between the elements in new array
 
 end
